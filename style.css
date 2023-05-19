@@ -7,7 +7,7 @@
 
 html{
     font-family: 'Raleway';
-    font-size: 12px;
+    font-size: 10px;
    
 }
 body{
@@ -33,14 +33,14 @@ body{
 .table td{
     
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 3px;
     
 }
 
 .table th{
         border: 1px solid #ddd;
-        padding: 8px;
-        font-size: 2rem;
+        padding: 4px;
+        font-size: 1rem;
         background-color: rgb(23, 57, 106);
         text-align: center;
       }

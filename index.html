@@ -9,6 +9,9 @@
     <title>Document</title>
 </head>
 <body>
+
+<h1 class = 'display-3 mt-5 text-light'>OEWS Search Tool</h1>
+
 <form class = 'p-5'>
 <input class = 'form-control p-3 mt-5' type = "text" id = "area-input" placeholder="Enter the area ..." style ='max-width: 40%'>
 <input class = 'form-control p-3 mt-3' type = "text" id = "occ-input" placeholder="Enter the Job ..." style ='max-width: 40%'>
@@ -16,8 +19,12 @@
 <input type = "text" id = "end_year" placeholder="End Year ..."> -->
 <button  class = 'btn btn-lg btn-secondary p-3 mt-3' type = "button" id = "submit">Submit</button>
 </form>
-<div id = 'second-box'></div>
-<button id="calculate">Calculate</button>
+<div id = 'second-box'>
+    <table id = 'second-box-table' class = 'table mb-5'></table>
+
+
+</div>
+
 <div class = "display-data" id = "display-data">
 <div class = 'table-responsive'>
     <table id = 'tableOutput' class ='table'></table>
