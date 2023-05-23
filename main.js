@@ -1,5 +1,20 @@
+let fieldDescriptions;
 
+function processFieldData (descriptions){
+  // console.log('field descriptions: ', descriptions)
 
+}
+
+window.onload = function(){
+  fetch('oews_definitions.json')
+    .then(response => response.json())
+    .then(data =>{
+        // fieldDescriptions = data;
+        processFieldData(fieldDescriptions);
+    })
+    .catch(error => console.error('Error:', error))
+};
+// console.log('field descriptions:  '+ fieldDescriptions);
 const searchBtn = document.getElementById('submit');
 const display = document.getElementById('display-data');
 display.className = 'table-responsive'
@@ -27,20 +42,31 @@ function createSecondBoxTable(headers, columnIndices) {
   secondBox.appendChild(tableElement);
 }
 
+// handleSearch()
 async function handleSearch() {
     const response = await fetch('all.csv');
     const data = await response.text();
+    // console.log('Heres the data:  ' +data)
     const rows = data.split('\n');
+    // console.log('Heres the rows:  ' +rows)
+
+    
     const headers = rows[0].split(',');
+    headers.forEach((header, index) => {
+      // console.log(`Index: ${index}, Header: ${header}`);
+  });
 
    
 
     const table = [];
     table.push(headers); // Add headers to the table
+    // console.log(headers);
 
     rows.slice(1).forEach((row) => {
         const columns = row.split(',');
+        // console.log('here are the columns' +columns)
         table.push(columns);
+        // console.log(table)
     });
 
     
@@ -55,8 +81,10 @@ async function handleSearch() {
     let filteredTable = table.filter((row, index) => {
         if (index === 0) return true; // keep the header row
         const rowData = Object.fromEntries(headers.map((header, i) => [header, row[i]]));
-        const areaTitle = rowData['AREA_TITLE'];
-        const occTitle = rowData['OCC_TITLE'];
+        // console.log(rowData)
+        const areaTitle = rowData['Area Name'];
+        console.log(areaTitle)
+        const occTitle = rowData['Occupation'];
         return areaRegex.test(areaTitle) && occRegex.test(occTitle);
     });
 
@@ -79,6 +107,7 @@ async function handleSearch() {
         const th = document.createElement('th');
         th.textContent = header;
         headerRow.appendChild(th);
+        
     });
     tableElement.appendChild(headerRow);
 

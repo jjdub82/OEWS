@@ -5,13 +5,17 @@
     margin-right: 1rem;
 }
 
+*{
+    color:darkslategrey
+}
+
 html{
     font-family: 'Raleway';
     font-size: 10px;
    
 }
 body{
-    background-color: rgb(30, 39, 59);
+    background-color: rgb(222, 223, 226);
 }
 .table{
     border-color: 1px solid lightgray ;
@@ -26,7 +30,7 @@ body{
 }
 
 .table tr:nth-child(odd){
-    background-color: rgb(21, 92, 125); 
+    background-color: rgba(223, 231, 235, 0.938); 
     color: white
 }
 
@@ -34,13 +38,36 @@ body{
     
     border: 1px solid #ddd;
     padding: 3px;
+    margin-left: 2rem;
     
 }
 
 .table th{
         border: 1px solid #ddd;
-        padding: 4px;
+        padding: 10px;
+        color:#f2f2f2;
         font-size: 1rem;
-        background-color: rgb(23, 57, 106);
+        background-color: rgb(29, 46, 68);
         text-align: center;
       }
+
+#second-box-table{
+    border-collapse: collapse;
+    
+}
+
+#total-row{
+    background-color: transparent;
+    border-bottom: 3px solid darkslategray;
+    height: 3rem;
+    padding: 10px
+
+}
+
+#total-row td{
+    font-weight:800;
+    font-size: 1.5rem;
+    padding: 10px
+
+
+}

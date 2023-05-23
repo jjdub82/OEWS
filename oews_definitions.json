@@ -1,0 +1,96 @@
+[
+
+ {
+   "Field": "area",
+   "Field Description": "U.S. (99), state FIPS code, Metropolitan Statistical Area (MSA) or New England City and Town Area (NECTA) code, or OEWS-specific nonmetropolitan area code "
+ },
+ {
+   "Field": "area_title",
+   "Field Description": "Area name "
+ },
+
+ {
+   "Field": "prim_state",
+   "Field Description": "The primary state for the given area. \"US\" is used for the national estimates. "
+ },
+ {
+   "Field": "naics",
+   "Field Description": "North American Industry Classification System (NAICS) code for the given industry "
+ },
+
+
+ {
+   "Field": "occ_code",
+   "Field Description": "The 6-digit Standard Occupational Classification (SOC) code or OEWS-specific code for the occupation "
+ },
+ {
+   "Field": "occ_title",
+   "Field Description": "SOC title or OEWS-specific title for the occupation"
+ },
+ 
+ {
+   "Field": "tot_emp",
+   "Field Description": "Estimated total employment rounded to the nearest 10 (excludes self-employed)."
+ },
+ 
+ {
+   "Field": "jobs_1000",
+   "Field Description": "The number of jobs (employment) in the given occupation per 1,000 jobs in the given area. Only available for the state and MSA estimates; otherwise, this column is blank. "
+ },
+ 
+  
+ {
+   "Field": "h_mean",
+   "Field Description": "Mean hourly wage"
+ },
+ {
+   "Field": "a_mean",
+   "Field Description": "Mean annual wage "
+ },
+ {
+   "Field": "mean_prse",
+   "Field Description": "Percent relative standard error (PRSE) for the mean wage estimate. PRSE is a measure of sampling error, expressed as a percentage of the corresponding estimate. Sampling error occurs when values for a population are estimated from a sample survey of the population, rather than calculated from data for all members of the population. Estimates with lower PRSEs are typically more precise in the presence of sampling error."
+ },
+ 
+ {
+   "Field": "h_pct25",
+   "Field Description": "Hourly 25th percentile wage"
+ },
+ {
+   "Field": "h_median",
+   "Field Description": "Hourly median wage (or the 50th percentile)"
+ },
+ {
+   "Field": "h_pct75",
+   "Field Description": "Hourly 75th percentile wage"
+ },
+ {
+   "Field": "h_pct90",
+   "Field Description": "Hourly 90th percentile wage"
+ },
+ 
+ {
+   "Field": "a_pct25",
+   "Field Description": "Annual 25th percentile wage"
+ },
+ {
+   "Field": "a_median",
+   "Field Description": "Annual median wage (or the 50th percentile)"
+ },
+ {
+   "Field": "a_pct75",
+   "Field Description": "Annual 75th percentile wage"
+ },
+ {
+   "Field": "a_pct90",
+   "Field Description": "Annual 90th percentile wage"
+ },
+ {
+   "Field": "annual ",
+   "Field Description": "Contains \"TRUE\" if only annual wages are released. The OEWS program releases only annual wages for some occupations that typically work fewer than 2,080 hours per year, but are paid on an annual basis, such as teachers, pilots, and athletes."
+ },
+ {
+   "Field": "hourly ",
+   "Field Description": "Contains \"TRUE\" if only hourly wages are released. The OEWS program releases only hourly wages for some occupations that typically work fewer than 2,080 hours per year and are paid on an hourly basis, such as actors, dancers, and musicians and singers."
+ }
+]
