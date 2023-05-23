@@ -17,6 +17,7 @@ html{
 body{
     background-color: rgb(222, 223, 226);
 }
+
 .table{
     border-color: 1px solid lightgray ;
     border-collapse: collapse;
@@ -76,4 +77,10 @@ body{
     
     box-shadow: 3px 3px 3px 1px rgb(105, 112, 128);
     background-color: rgb(97, 105, 124);
+}
+
+#cpi-tbl td{
+    font-size: 1.5rem;
+    margin-left: 15px;
+    padding: 15px
 }
