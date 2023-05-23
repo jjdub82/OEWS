@@ -77,6 +77,12 @@ body{
     
     box-shadow: 3px 3px 3px 1px rgb(105, 112, 128);
     background-color: rgb(97, 105, 124);
+    color: whitesmoke
+}
+.nav-link{
+    color: whitesmoke;
+    font-size:  2rem;
+
 }
 
 #cpi-tbl td{
