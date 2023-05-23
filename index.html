@@ -9,31 +9,34 @@
     <title>BLS-OEWS Search</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#">OEWS Search Tool</a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
-  </div>
-</nav>
-<div class="row" style = 'min-height: 80px'></div>
+<nav class="navbar navbar fixed-top" style = 'min-height: 80px; margin:0px; width: 100%;'>
+<div class = 'container-fluid'>
+    <h1 class = 'display-3 px-3 mt-2 mx-5 text-light'>OEWS Search Tool</h1>
+</div>
 
+</nav>
+
+
+<div class="row" style = 'min-height: 80px'></div>
+<div class="row mx-2 mt-3">
+    <h1 class = 'display-1'>Yikes! That's A LOT of data</h1>
+    <p class="lead">The following search tool pulls from a survey called Occupational Employment and Wage Statistics (OEWS) Report.  In short, it is a boat load of wage information
+        for just about every profession you can imagine that covers most regions of the US.  You will find data by city, metro area, state region, and statewide. </p>
+    
+        <p class = 'lead'>The wages are broken by out by hourly rates and annual earnings, comparing the major percentile groups, means, and medians.  Instead of sorting through literally
+            millions lines of data, you can search by the area you are intersted and the occupation you are interested.  Both areas and occupations can somewhat unintuitive names, but 
+            this tool searches for wildcards, so as long as you in right ballpark, you should be abel to find what you need.
+            </p>
+
+        <p class = 'lead'>PRO TIP:  Search broad to begin with, perhaps a state wide search, and then you wil see the areas available in that state</p>  
+
+    <h1 class = 'display-5'>That's still a boatload of data!</h1>
+    <p class = 'lead'>Okay, calm down...If you only want to see a few lines of data data that populate on your search, click the checkbox next to the row and it will be added to a new a table that 
+        includes only the rows you actually want.  From there, you will see the average of rates collected.
+
+        Now go nuts......
+    </p>
+</div>
 
 <form class = 'p-5'>
 <input class = 'form-control p-3 mt-5' type = "text" id = "area-input" placeholder="Enter the area ..." style ='max-width: 40%'>

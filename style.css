@@ -71,3 +71,9 @@ body{
 
 
 }
+
+.navbar{
+    
+    box-shadow: 3px 3px 3px 1px rgb(105, 112, 128);
+    background-color: rgb(97, 105, 124);
+}
